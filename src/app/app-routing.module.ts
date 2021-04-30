@@ -1,7 +1,19 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { CotacoesHistoricasB3Component } from './apps/cotacoes-historicas-b3/cotacoes-historicas-b3.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NgModule } from '@angular/core';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  }, 
+  {
+    path: 'cotacoes-historicas-b3',
+    component: CotacoesHistoricasB3Component
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

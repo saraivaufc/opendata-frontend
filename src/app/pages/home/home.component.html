@@ -1,0 +1,26 @@
+<app-slider></app-slider>
+
+<div class="services-area">
+    <div class="container">
+        <div class="row justify-content-sm-center">
+            <app-service class="col-lg-4 col-md-6 col-sm-8" *ngFor="let service of services" [service]="service"></app-service>
+        </div>
+    </div>
+</div>
+
+
+<div class="courses-area section-padding40 fix">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+                <div class="section-tittle text-center mb-55">
+                    <h2>Our featured courses</h2>
+                </div>
+            </div>
+        </div>
+        <div class="courses-actives">
+        <div class="row justify-content-sm-center">
+            <app-feature class="col-lg-4 col-md-6 col-sm-8" *ngFor="let feature of features" [feature]="feature"></app-feature>
+        </div>
+    </div>
+</div>

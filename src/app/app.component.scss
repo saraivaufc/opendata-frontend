@@ -1,0 +1,13 @@
+.main {
+  min-height: 100vh;
+}
+
+.content {
+  margin-top: 62px;
+}
+
+@media (min-width: 990px) {
+  .content {
+    margin-top: 102px;
+  }
+}
